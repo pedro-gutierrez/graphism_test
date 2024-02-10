@@ -22,7 +22,8 @@ defmodule GraphismTest.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:graphism, git: "https://github.com/Otion-Core/graphism.git", tag: "v0.13.0"}
+      {:bandit, "~> 1.0"},
+      {:graphism, path: "/Users/pedrogutierrez/Projects/graphism"}
     ]
   end
 end

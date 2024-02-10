@@ -8,7 +8,8 @@ defmodule GraphismTest.Application do
   @impl true
   def start(_type, _args) do
     children = [
-      GraphismTest.Repo
+      GraphismTest.Repo,
+      {Bandit, plug: GraphismTest.Router}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

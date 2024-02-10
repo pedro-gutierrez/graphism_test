@@ -41,6 +41,7 @@ defmodule GraphismTest.Schema do
     boolean(:released)
     boolean(:premium)
     boolean(:paid)
+    optional(time(:starts_at))
 
     action :create do
       allow(:anonymous)
